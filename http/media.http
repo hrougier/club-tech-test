@@ -1,0 +1,28 @@
+### Create a new media
+POST http://localhost:3000/media
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNGJmZjJmZS04MzAxLTRkNTUtYjQwZS0yOWI2MzRjYzI4MjEiLCJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzQ2NTMyMzU0LCJleHAiOjE3NDY2MTg3NTR9.8OvzmSP-RKKU6rwC7wdDNJYdqiJAggFb1Wen1UyaX6o
+
+{
+  "title": "My first media",
+  "description": "A description of my media",
+  "url": "https://example.com/media.jpg"
+}
+
+### Get a media by ID
+GET http://localhost:3000/media/REPLACE_WITH_MEDIA_ID
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNGJmZjJmZS04MzAxLTRkNTUtYjQwZS0yOWI2MzRjYzI4MjEiLCJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzQ2NTMyMzU0LCJleHAiOjE3NDY2MTg3NTR9.8OvzmSP-RKKU6rwC7wdDNJYdqiJAggFb1Wen1UyaX6o
+
+### Update a media
+PATCH http://localhost:3000/media/REPLACE_WITH_MEDIA_ID
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNGJmZjJmZS04MzAxLTRkNTUtYjQwZS0yOWI2MzRjYzI4MjEiLCJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzQ2NTMyMzU0LCJleHAiOjE3NDY2MTg3NTR9.8OvzmSP-RKKU6rwC7wdDNJYdqiJAggFb1Wen1UyaX6o
+
+{
+  "title": "Updated title",
+  "description": "Updated description"
+}
+
+### Delete a media
+DELETE http://localhost:3000/media/REPLACE_WITH_MEDIA_ID
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNGJmZjJmZS04MzAxLTRkNTUtYjQwZS0yOWI2MzRjYzI4MjEiLCJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzQ2NTMyMzU0LCJleHAiOjE3NDY2MTg3NTR9.8OvzmSP-RKKU6rwC7wdDNJYdqiJAggFb1Wen1UyaX6o
