@@ -1,0 +1,3 @@
+### Get user feed (paginated, excluding viewed media)
+GET http://localhost:3000/feed?page=1&limit=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNGJmZjJmZS04MzAxLTRkNTUtYjQwZS0yOWI2MzRjYzI4MjEiLCJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzQ2NTMyMzU0LCJleHAiOjE3NDY2MTg3NTR9.8OvzmSP-RKKU6rwC7wdDNJYdqiJAggFb1Wen1UyaX6o
