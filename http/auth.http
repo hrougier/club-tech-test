@@ -1,0 +1,12 @@
+### Login with email and password
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "alice@example.com",
+  "password": "password"
+}
+
+### Get profile
+GET http://localhost:3000/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNGJmZjJmZS04MzAxLTRkNTUtYjQwZS0yOWI2MzRjYzI4MjEiLCJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzQ2NTMyMzU0LCJleHAiOjE3NDY2MTg3NTR9.8OvzmSP-RKKU6rwC7wdDNJYdqiJAggFb1Wen1UyaX6o
