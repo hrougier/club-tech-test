@@ -1,0 +1,34 @@
+### Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "email": "alice@example.com",
+  "password": "password",
+  "description": "description2",
+  "pictureUrl": "https://example.com/avatar.jpg"
+}
+
+### Get user by ID
+GET http://localhost:3000/users/REPLACE_WITH_USER_ID
+
+### Update user
+PATCH http://localhost:3000/users/REPLACE_WITH_USER_ID
+Content-Type: application/json
+
+{
+  "description": "Updated description",
+  "profilePicture": "https://example.com/new-avatar.png"
+}
+
+### Delete user
+DELETE http://localhost:3000/users/REPLACE_WITH_USER_ID
+
+### Follow user
+POST http://localhost:3000/users/REPLACE_WITH_USER_ID/follow
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNGJmZjJmZS04MzAxLTRkNTUtYjQwZS0yOWI2MzRjYzI4MjEiLCJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzQ2NTMxODE5LCJleHAiOjE3NDY2MTgyMTl9.MDdF5GWdOEDpXoOG-u8I3CiV4YnPHmD8VJSr1VfSwPc
+
+### Unfollow user
+DELETE http://localhost:3000/users/REPLACE_WITH_USER_ID/unfollow
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNGJmZjJmZS04MzAxLTRkNTUtYjQwZS0yOWI2MzRjYzI4MjEiLCJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzQ2NTMxODE5LCJleHAiOjE3NDY2MTgyMTl9.MDdF5GWdOEDpXoOG-u8I3CiV4YnPHmD8VJSr1VfSwPc

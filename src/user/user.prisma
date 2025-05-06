@@ -1,0 +1,25 @@
+model User {
+  id          String        @id @default(uuid())
+  username    String        @unique
+  email       String        @unique
+  description String?
+  pictureUrl  String?
+  password    String
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  media       Media[]
+  followers   Follow[]      @relation("FollowedBy")
+  following   Follow[]      @relation("Following")
+  viewedMedia ViewedMedia[]
+}
+
+model Follow {
+  followerId String
+  follower   User   @relation("Following", fields: [followerId], references: [id])
+  followedId String
+  followed   User   @relation("FollowedBy", fields: [followedId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  @@id([followerId, followedId])
+}
